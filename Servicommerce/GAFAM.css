@@ -1,0 +1,132 @@
+ /* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* En-tête */
+header {
+    background: #0052cc; /* Bleu foncé */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Style de la barre de navigation */
+nav {
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    padding: 0.5rem 0; /* Espacement vertical */
+}
+
+nav ul {
+    list-style-type: none; /* Supprime les puces des listes */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
+    justify-content: center; /* Centre les éléments dans la barre de navigation */
+}
+
+nav li {
+    margin: 0 10px; /* Espacement horizontal entre les éléments */
+}
+
+nav a {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+nav a:hover {
+    font-weight: bold; /* Rend le texte des liens en gras */
+}
+
+
+/* Conteneur principal */
+.container {
+    padding: 1rem;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+section h2 {
+    color: #0052cc;
+}
+
+section h3 {
+    color: #333;
+}
+
+/* Listes */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+}
+
+/* Boutons */
+button {
+    background: #0052cc;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #003f88;
+}
+
+/* Liens */
+a {
+    color: #0052cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+/* Style pour les médias */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+.logo {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Logo becomes a block-level element */
+    margin: 0 auto; /* Center the logo horizontally */
+    padding: 10px 0; /* Add some space above and below the logo */
+}
+

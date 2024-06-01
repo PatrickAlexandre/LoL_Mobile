@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --highlight-color-red: #f00;
+    --highlight-color-blue: #00f;
+    --highlight-color-green: #008000;
+    --text-primary: #ddd;
+    --text-secondary: #bbb;
+    --background-color: #111;
+    --bar-height: 10px;
+    --bar-radius: 5px;
+    --border-radius: 8px;
+    --border-radius-half: 50%;
+    --action-bar-height: 60px;
+    --mini-map-size: 150px;
+    --character-image-size: 50px;
+    --quest-list-width: 200px;
+    --chat-box-width: 300px;
+    --chat-box-height: 200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ui-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.action-bar {
+    background-color: var(--primary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: var(--bar-radius);
+}
+
+.chat-box {
+    position: absolute;
+    left: 10px;
+    bottom: var(--action-bar-height);
+    width: var(--chat-box-width);
+    height: var(--chat-box-height);
+    background-color: var(--primary-color);
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.mini-map {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: var(--mini-map-size);
+    height: var(--mini-map-size);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-half);
+}
+
+.character-bar {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: var(--chat-box-width);
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+}
+
+.character-image {
+    width: var(--character-image-size);
+    height: var(--character-image-size);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-half);
+    margin-right: 10px;
+}
+
+.character-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.character-name {
+    font-weight: bold;
+}
+
+.health-mana {
+    display: flex;
+}
+
+.bar {
+    height: var(--bar-height);
+    border-radius: var(--bar-radius);
+    margin-right: 5px;
+}
+
+.health-bar {
+    width: 100px;
+    background-color: var(--highlight-color-red);
+}
+
+.mana-bar {
+    width: 100px;
+    background-color: var(--highlight-color-blue);
+}
+
+.experience-bar {
+    position: absolute;
+    bottom: 50px;
+    left: 310px;
+    width: 100%;
+}
+
+.reputation-bar {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: var(--bar-height);
+    background-color: var(--highlight-color-green);
+}
+
+.quest-list {
+    position: absolute;
+    right: 10px;
+    top: 170px;
+    width: var(--quest-list-width);
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.quest-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.quest-description {
+    font-size: 12px;
+    color: var(--text-secondary);
+}

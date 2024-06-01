@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Comparateur | Valeurs nutritionnelles</title>
+    <link rel="stylesheet" type="text/css" href="./NuPri.css">
+    <link rel="stylesheet" type="text/css" href="./product-card.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section Scan Code-Barres -->
+        <section class="scan-section">
+            <h2>Scannez un code-barres</h2>
+            <input type="text" id="barcodeInput" placeholder="Entrez le code-barres">
+            <button id="scanButton">Scanner</button>
+        </section>
+
+        <!-- Section Comparatif des Valeurs Nutritionnelles -->
+        <section class="nutrition-section">
+            <h2>Valeurs nutritionnelles</h2>
+
+            <section class="product-card">
+                <div id="nutritionInfo"><!-- Les informations nutritionnelles seront insérées ici --></div>
+            </section>
+
+        </section>
+    </div>
+
+    <script src="./NuPri.js"></script>
+</body>
+</html>

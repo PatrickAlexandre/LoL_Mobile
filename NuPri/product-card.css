@@ -1,0 +1,41 @@
+/* Style de base pour la carte de produit */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+    /*
+    .product-card:hover {
+    transform: scale(1.1);
+    }
+    */
+
+/* Style pour les informations nutritionnelles */
+#nutritionInfo {
+  background-color: #e6e6e6;
+  padding: 12px;
+  border-top: 1px solid #ccc;
+  margin-top: 12px;
+}
+
+/* Style pour le texte des informations nutritionnelles */
+#nutritionInfo p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Style pour les liens de la carte de produit */
+.product-card a {
+  color: #00aaff;
+  text-decoration: none;
+  transition: color 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.product-card a:hover {
+  color: #0077aa;
+}

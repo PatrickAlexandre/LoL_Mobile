@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Comparateur Prix | Distributeur (Liste de courses, Livraison)</title>
+    <link rel="stylesheet" type="text/css" href="./NuPri.css">
+</head>
+<body>
+    <div class="container">
+        <section class="shop-section">
+            <h1>Comparateur de prix Distributeurs Alimentaires en France</h1>
+            <h2>Comparez vraiment qui est le moins chère !</h2>
+            <form id="fournisseursForm">
+                <input type="checkbox" id="fournisseur1" name="fournisseur[]" value="https://www.carrefour.fr/s?q=">
+                <label for="fournisseur1">Carrefour</label><br>
+                <input type="checkbox" id="fournisseur2" name="fournisseur[]" value="https://www.coursesu.com/recherche?q=">
+                <label for="fournisseur2">Super U</label><br>
+                <input type="checkbox" id="fournisseur3" name="fournisseur[]" value="https://www.auchan.fr/recherche?text=">
+                <label for="fournisseur3">Auchan</label><br>
+                <input type="checkbox" id="fournisseur4" name="fournisseur[]" value="https://www.google.fr/search?tbm=shop&q=">
+                <label for="fournisseur4">Google Shopping</label><br>
+                <input type="text" id="codeBarre" placeholder="Entrez le code-barres">
+                <button type="button" onclick="voirPrix()">Voir les prix</button>
+            </form>
+        </section>
+<!--        Intégrer Product-card*CHECKED (Image+Nom+Prix) ici
+        <iframe src="https://www.carrefour.fr/" width="600" height="400">
+            Votre navigateur ne supporte pas les iframes.
+        </iframe>
+-->
+    </div>
+    <script src="./new-script.js"></script>
+</body>
+</html>
